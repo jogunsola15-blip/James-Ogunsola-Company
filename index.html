@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimi Ogunsola & Company</title>
+    <link rel="icon" type="favicon/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="favicon/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="MyWebSite" />
+<link rel="manifest" href="/site.webmanifest" />
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #fff7e6;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #222;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: #ffdd00;
+        }
+
+        h1, h2, h3, h4 {
+            margin: 0 0 15px 0;
+        }
+
+        /* Header */
+        header {
+            background: #383535;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            text-align: center;
+            background: #ffdd00;
+            padding: 15px 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        nav a {
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: #383535;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688') center/cover no-repeat;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #222;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero h2 {
+            background: rgba(255, 221, 0, 0.8);
+            padding: 20px 40px;
+            border-radius: 12px;
+            font-size: 2rem;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        /* Properties Grid */
+        .properties {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .property-card {
+            background: #fff1b8;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .property-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .property-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .property-card .info {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .property-card .info h3 {
+            color: #383535;
+        }
+
+        .property-card .info p {
+            margin: 5px 0;
+        }
+
+        /* About / Contact / Members */
+        #about h4, #contact h4 {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        #contact a.button {
+            display: inline-block;
+            background: #ffdd00;
+            color: #222;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        #contact a.button:hover {
+            background: #e6c200;
+            color: #fff;
+        }
+
+        iframe {
+            border-radius: 12px;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            border: 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Staff List */
+        .staff-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 30px;
+        }
+
+        .staff-list li {
+            background: #fff1b8;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #383535;
+            color: #fff;
+            padding: 25px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        #contact:hover {
+            color: #383535;
+        }
+
+        /* Responsive */
+        @media(max-width:768px) {
+            .hero h2 {
+                font-size: 1.5rem;
+                padding: 15px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Jimi Ogunsola & Co</h1>
+        <p>Asset Valuation | Property / Facility Management | Property Sales and Agency</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#properties">Properties</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#members">Members</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Your Next Home Awaits</h2>
+    </section>
+
+    <section id="properties" class="section">
+        <h2>Featured Listings</h2>
+        <div class="properties">
+            <div class="property-card">
+                <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Property">
+                <div class="info">
+                    <h3>Luxury Villa</h3>
+                    <p>$850,000</p>
+                    <p>4 Bedrooms, Pool, Ocean View</p>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c" alt="Property">
+                <div class="info">
+                    <h3>Modern Apartment</h3>
+                    <p>$420,000</p>
+                    <p>2 Bedrooms, City Center</p>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914" alt="Property">
+                <div class="info">
+                    <h3>Family Home</h3>
+                    <p>$560,000</p>
+                    <p>3 Bedrooms, Quiet Neighborhood</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <h4>
+            We are a firm of Estate Surveying and Valuation duly registered with the Corporate Affairs 
+            Commission (CAC) and the Estate Surveyors and Valuation Registration Board of Nigeria 
+            (ESVARBON) to practice the profession of estate surveying and valuation throughout Nigeria.
+        </h4>
+        <h2>Recognition and Award</h2>
+        <h4>
+            We received a CERTIFICATE OF COMPLETION from LAGOS STATE GOVERNMENT in 2021 
+            having successfully completed a State Government Valuation Assignment.
+        </h4>
+        <h2>Past Jobs</h2>
+        <h4>
+            <ul>
+                <li>Valuation of Lagos State Government Fixed Assets according to IPSAS Implementation.</li>
+                <li>Valuation of Ame’na Hotels & Resorts and Roswell Water Bottling Company in Delta State.</li>
+                <li>Rental Valuations of Mr Biggs Outlets in Lagos State for UACN.</li>
+            </ul>
+        </h4>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <h4>Email: 
+            <a class="button" href="mailto:jamesogunsola@gmail.com" target="_blank">
+                jamesogunsola@gmail.com
+            </a>
+        </h4>
+        <h4>Telephone Number: 08029572059, 08088837102</h4>
+        <h4>Address: 
+            <a href="https://www.google.co.uk/maps/place/14+Odunuga+St,+Opebi,+Ikeja+101233,+Lagos,+Nigeria/@6.5931955,3.3582896,17z" target="_blank">
+                14, Odunuga Street, Opebi, Ikeja, Lagos.
+            </a>
+        </h4>
+        <h4>Instagram: jimiogunsola_and_company</h4>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4312924156848!2d3.358289574806518!3d6.5931954934005095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9240cfc02c3f%3A0xca7a4e9c650a2ef9!2s14%20Odunuga%20St%2C%20Opebi%2C%20Ikeja%20101233%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2suk!4v1762793806292!5m2!1sen!2suk" 
+            allowfullscreen="" loading="lazy">
+        </iframe>
+    </section>
+
+    <section id="members" class="section">
+        <h2>Members of Staff</h2>
+        <ul class="staff-list">
+            <li><strong>Principal Partner:</strong> Mr. James Ogunsola (B.Sc. ANIVS C)</li>
+            <li><strong>Estate Surveyor & Valuer:</strong> Mr. Hillary Asiwe (HND Est. Mgt.)</li>
+            <li><strong>Office Secretary:</strong> Miss Damilola Adefila (B.Sc. Bus. Mgt.)</li>
+            <li><strong>Others:</strong> A Driver and Contractors</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jimi Ogunsola & Co. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
